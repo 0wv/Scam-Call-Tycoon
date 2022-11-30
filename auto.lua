@@ -41,19 +41,6 @@ local Toggle = Tab:CreateToggle({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Upgrade Scamming Speed",
-	Callback = function()
-
-		local args = {
-			[1] = "TransferSpeed",
-			[2] = "200",
-		}
-
-			game:GetService("ReplicatedStorage").Events.UpgradeItem:FireServer(unpack(args))
-	end,
-})
-
-local Button = Tab:CreateButton({
 	Name = "Destroy UI",
 	Callback = function()
         isUnloaded = true
@@ -77,6 +64,10 @@ task.spawn(function ()
         task.wait(2)
     end
 end) 
+
+
+
+
 -- Extras
 
 -- getgenv().SecureMode = true -- Only Set To True If Games Are Detecting/Crashing The UI
