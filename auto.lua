@@ -46,6 +46,7 @@ local Button = Tab:CreateButton({
 
 		local args = {
 			[1] = "TransferSpeed",
+			[2] = "200",
 		}
 
 			game:GetService("ReplicatedStorage").Events.UpgradeItem:FireServer(unpack(args))
