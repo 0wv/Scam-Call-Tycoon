@@ -55,7 +55,7 @@ task.spawn(function ()
         if isEnabled then 
             game:GetService("ReplicatedStorage").Events.GenerateNumber:FireServer()
             
-            task.wait(3.5)
+            task.wait(6)
             local cc = game:GetService("Players").LocalPlayer.GeneratedNumber.Value
             print('swiping this cunts card rn')
         
